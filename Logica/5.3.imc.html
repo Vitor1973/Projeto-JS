@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<h1>IMC = peso / (altura * altura)</h1>
+
+<script>
+    function pulaLinha()  {
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(peso, altura) {
+  
+        return peso / (altura * altura);
+            
+    }
+
+    var totalImc = calculaImc (90, 1.80) + calculaImc(50, 1.55)
+    
+    document.write("A soma dos imc é " + totalImc)
+  
+    
+</script>
