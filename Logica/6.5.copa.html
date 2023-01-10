@@ -2,7 +2,9 @@
 
 <script>
 
-    alert('No ano de 1942 não teve copa do mundo por causa da II guerra mundial !!!');
+    var copa = prompt('Qual a sua copa favorita digite o ano !')
+    document.write('Minha copa favorita foi a do ano de ' + copa )
+    document.write('<br><br>')
 
     function pularLinha() {
         document.write("<br><br>");
@@ -22,12 +24,12 @@
         mostra("Teve copa em " + anoCopa);
         anoCopa = anoCopa + 4;
         //mostra("Em 1942 não houve copa por causa da II Guerra ")
-        anoCopa1 = anoCopa1 + 4
+        //anoCopa1 = null
  
 
 
     }
-    mostra("Não teve copa no ano de 1942 por causa da II Guerra Mundial !!!")
+    mostra("<h1>No ano de 1942 não houve copa do mundo  por causa da II Guerra Mundial !!!</h1>")
     mostra("Fim");
 
 </script>
