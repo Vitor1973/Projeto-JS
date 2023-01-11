@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ano Copa Limite</title>
 </head>
 <body>
     <script>
+
         function pulaLinha() {
             document.write("<br>");
         }
@@ -17,24 +18,14 @@
             pulaLinha();
         }
     
-        var contador = 30;
+        var anoCopa = 1930;
+        var limite = parseInt(prompt("Qual é o ano limite?"));
     
-        while(contador <= 40) {
-    
-            if( contador == 33 ) {
-            contador = contador + 1;
-            }
-            else if(contador == 37) {    
-                contador = contador + 1;
-            }
-            else {
-            mostra(contador);
-            contador = contador + 1; 
-            }
-          }
-    
-        mostra("FIM");
-    
+        while(anoCopa <= limite) {
+            mostra(anoCopa + " tem copa!");
+            anoCopa = anoCopa + 4;
+        }
+        mostra("Ufa! Esses foram os anos de copa até " + limite);
     </script>
 </body>
 </html>

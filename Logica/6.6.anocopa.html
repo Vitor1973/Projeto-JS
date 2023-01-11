@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ano Copa Limite</title>
+</head>
+<body>
+    <script>
+        function pularLinha() {
+            document.write("<br>")
+        }
+        function mostra(frase) {
+            document.write(frase)
+            pularLinha()
+        }
+        var anoCopa = 1930;
+        var limite = parseInt(prompt('Qual é o ano limite da Copa?'))
+        while(anoCopa <= limite) { 
+            mostra(anoCopa + " tem copa!");
+            anoCopa = anoCopa + 4;
+        }
+        mostra("Ufa ! Esses foram os anos de copa até " + limite);
+
+    </script>
+    
+</body>
+</html>
+<!--var = declara uma variavel, opcional é possivel atribuir à ela u valor em sua inicialização
+
+-->
