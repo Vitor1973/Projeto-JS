@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ano Copa Teste</title>
+</head>
+<body>
+    <script>
+
+        function pulaLinha() {
+            document.write("<br>","<br>")
+        }
+        function mostra(frase) {
+            document.write(frase); pulaLinha()
+        }
+
+        var limite = parseInt(prompt("Entre com o ano limite"))
+        var anoCopa =  1930;
+        while (anoCopa <= limite){
+            mostra("Teve copa em " + anoCopa)
+            anoCopa = anoCopa + 10
+        }
+
+        mostra("Fim !!!");
+    </script>
+    <script>
+        var anoOlimpiadas = 1900;
+        while(anoOlimpiadas <= 2020){
+            mostra("Ano de Olimpiadas " + anoOlimpiadas)
+            anoOlimpiadas = anoOlimpiadas + 8
+
+        }
+        mostra("Fim do Mundo !!!")
+
+    </script>
+    <script>
+        var anoCopaDoida = 1933;
+        while(anoCopaDoida <= 2022){
+            alert("Ano das copas confusas " + anoCopaDoida)
+            anoCopaDoida = anoCopaDoida + 6
+        }
+        mostra("Fim disso !!!")
+
+    </script>
+    <script>
+        var somar = 200
+        while(somar <= 1000){
+            alert("Soma total " + somar)
+            somar = somar + 100
+        }
+        mostra("Fim da soma !!!")
+    </script>
+         
+</body>
+</html>
