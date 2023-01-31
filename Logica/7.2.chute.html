@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Chute</title>
+    <meta charset = "UTF-8">
+
+<h1>Jogo Chute</h1>
+    <style>
+        body {
+
+            font: 18pt Arial;
+            background: blueviolet;
+        }
+
+    </style>
+
+</head>
+<body>
+    <script>
+
+        function pularLinha() {
+    
+            document.write("<br><br>")
+        }
+    
+        function mostrar (frase) {
+            document.write(frase);
+            pularLinha();
+        }
+            
+        var numeroPensado =  Math.round(Math.random() * 10);
+        var tentativas = 1;
+        while(tentativas <= 3) {
+            var chute = parseInt(prompt("Digite um numero 0 a 10 !!!"));
+        
+            if(chute == numeroPensado) {
+                mostrar("Você acertou!, o número pensado foi " + numeroPensado );
+                break; // break = COMANDO PARA QUEBRAR O WHILE E IR PARA A PROXIMA INSTRUÇÃO.
+            }
+            else {
+                mostrar("Você errou!!" );
+            }
+            //tentativas = tentativas + 1;
+            tentativas++;
+        }
+        
+           mostrar('FIM !')
+        
+    </script>
+    
+</body>
+</html>

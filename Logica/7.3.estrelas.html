@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrelas</title>
+    <h1>Estrelas</h1>
+    <style>
+        body {
+
+            font: 18pt Arial;
+            background: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+        /** 1º Exemplo
+        function pularLinha() {
+            document.write('<br>')
+        }
+        function mostra(frase) {
+            document.write(frase);
+            pularLinha();
+        }
+
+        for(var linha = 1; linha <= 10; linha=linha + 1 ) {
+
+            mostra('**********')
+        }**/
+        function pularLinha() {
+            document.write('<br>')
+        }
+        function mostra(frase) {
+            document.write(frase);
+            pularLinha();
+        }
+        for(var linha = 1; linha <= 3; linha++) {
+            for(var coluna = 1; coluna <= 10; coluna++) {
+                document.write('*');
+            }
+            pularLinha();
+        }
+        mostra('FIM !!!')
+
+    </script>
+    
+</body>
+</html>

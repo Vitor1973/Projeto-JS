@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Armazenando Muitos Dados</title>
+
+        <input>
+        <button><strong>Segredo do Vitor !</strong></button>
+
+    </head>
+        <body>
+            <script>
+                let segredo = 5; // Match.round(Math.random() * 10):
+                let input = document.querySelector("input");
+                input.focus();
+
+                function verifica() {
+                    if(input.value == segredo){
+                        alert('Você é um gênio, acertou mizeraviiii !!!')
+                    }else{
+                        alert("Você errou Babão !!!")
+                    } 
+                    input.value = '';
+                    input.focus();
+                }
+                let button = document.querySelector('button')
+                button.onclick = verifica;
+            </script>
+        </body>
+</html>
