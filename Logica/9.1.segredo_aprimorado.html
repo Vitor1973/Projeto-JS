@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segredo Aprimorado</title>
+</head>
+<body>
+    <input>
+    <button>Compare com o meu segredo</button>
+    <script>
+        function sorteia(){
+            return Math.round(Math.random() * 10);
+        }
+        function sorteiaNumeros(quantidade) {
+            var segredos = [];
+            var numero = 1;
+            while(numero <= quantidade) {
+                segredos.push(sorteia());
+                
+
+            }
+
+        }
+        var segredos = sorteiaNumeros(5);
+
+        var input = document.querySelector("input");
+        input.focus();
+
+        function verifica() {
+
+            var achou = false;
+
+            for(var posicao = 0; posicao < segredos.length; posicao++) {
+                if(input.value == segredos[posicao]) {
+                    alert('Voce ACERTOU!');
+                    achou = true;
+                    break;
+                }
+        }
+        alert("Você errou Babão !!!")
+                    
+                    input.value = "";
+                    input.focus();  
+    }
+
+                var button = document.querySelector('button')
+                button.onclick = verifica;
+    </script>
+</body>
+</html>
