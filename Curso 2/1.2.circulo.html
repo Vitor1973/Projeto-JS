@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circulo</title>
+</head>
+<body>
+    <canvas width="1200" height="600"></canvas>
+
+    <script>
+            var tela = document.querySelector("canvas")
+            //tela.innerHTML('Vitor')
+            var pincel = tela.getContext('2d') // https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext
+                
+            pincel.fillStyle = 'black'
+            pincel.fillRect(0,0,1200,600); //Preencha um retangulo fillRect() coordenadas do canvas 600 largura por 400 altura
+            
+            pincel.fillStyle = 'blue' //   PROPRIEDADE fillStyle https://www.w3schools.com/tags/canvas_fillstyle.asp
+            pincel.fillRect(0,0,400,600);
+
+            pincel.fillStyle = 'purple';
+            pincel.fillRect(800,0,400,600);
+
+            pincel.fillStyle = 'yellow'
+            pincel.beginPath(); // Começa um novo caminho
+            pincel.moveTo(400,600);
+            pincel.lineTo(600, 400);
+            pincel.lineTo(800, 600);
+            pincel.fill();
+
+            pincel.fillStyle = 'orange'
+            pincel.beginPath();
+            pincel.arc(1000,200,150,100, 2 * 3,14);
+            pincel.fill();
+
+            pincel.fillStyle = 'black'
+            pincel.beginPath();
+            pincel.arc(200,200,50,100, 2 * 3,14);
+            pincel.fill();
+
+            pincel.fillStyle = 'white'
+            pincel.beginPath();
+            pincel.arc(600,200,100,100, 2 * 3,14);
+            pincel.fill();
+    </script>
+</body>
+</html>
