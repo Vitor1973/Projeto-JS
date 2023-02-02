@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arco Iris</title>
+</head>
+<body>
+    <canvas width="1200" height="600"></canvas>
+
+    <script>
+        var tela = document.querySelector("canvas")
+        var pincel = tela.getContext('2d') // https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext
+            
+            pincel.fillStyle = 'lightblue'
+            pincel.fillRect(0, 0, 1200, 600); //Preencha um retangulo fillRect() coordenadas do canvas 600 largura por 400 altura
+            
+            pincel.fillStyle = 'green'
+            pincel.fillRect(0,0, 200, 600);
+
+            pincel.fillStyle = 'red';
+            pincel.fillRect(1000, 0, 200, 600);
+
+            pincel.fillStyle = 'black'
+            pincel.fillRect(600, 0, 200, 600)
+
+            pincel.fillStyle = 'orange'
+            pincel.fillRect(800, 0, 200, 600)
+
+            pincel.fillStyle = 'violet'
+            pincel.fillRect(400, 0, 200, 600)
+
+            pincel.fillStyle = 'pink'
+            pincel.fillRect(200, 0, 200, 600)
+
+    </script>
+</body>
+</html>
