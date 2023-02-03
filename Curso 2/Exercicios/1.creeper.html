@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Monstro</title>
     <canvas width="600" height="400"></canvas>
 </head>
 <body>
@@ -12,17 +12,44 @@
         var tela = document.querySelector('canvas')
         var pincel = tela.getContext('2d');
 
+        //Cabeça
         pincel.fillStyle = 'darkgreen'
-        pincel.fillRect(0,0,600,400)
+        pincel.fillRect(0,00,600,400)
 
+        //Olhos
         pincel.fillStyle = 'black'
-        pincel.fillRect(100,100,120,100)
+        pincel.fillRect(100,100,120,100) // zoio 1
+        pincel.fillRect(325,100,115,100) // zoio 2
+        
+        
 
+        //Nariz
         pincel.fillStyle = 'black'
-        pincel.fillRect(325,100,100,100)
+        pincel.fillRect(325,100,100,100) 
 
-        pincel.fillStyle = 'black'
+        //Barba
         pincel.fillRect(225,200,100,100)
+        pincel.fillRect(324,300,70,100)
+        pincel.fillRect(155,300,70,100)
+
+        // Boca
+        pincel.fillStyle = 'darkblue'
+        pincel.fillRect(220, 300, 110, 85)
+
+        pincel.fillStyle = 'yellow'
+        pincel.fillRect(240, 335, 70, 25)
+
+        //Bola do olho esquerdo
+        pincel.fillStyle = 'red'
+        pincel.beginPath();
+        pincel.arc(158,150,40,100, 2 * 3,14);
+        pincel.fill();
+     
+        //Bola do olho direito
+        pincel.fillStyle = 'red'
+        pincel.beginPath();
+        pincel.arc(385,150,40,100, 2 * 3,14);
+        pincel.fill();
 
     </script>
     
