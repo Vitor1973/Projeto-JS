@@ -10,21 +10,24 @@
     <canvas width="600" height="400"></canvas>
     <script>
 
-        function desenhaQuadradoVerde(x) {
+        function desenhaQuadrado(x, y, a, b, cor) {
         var tela = document.querySelector('canvas')
         var pincel = tela.getContext('2d');
 
-        pincel.fillStyle = 'green';
-        pincel.fillRect(x,0,100,100);
+        pincel.fillStyle = cor; //'green';
+        pincel.fillRect(x, y, a, b);
         //pincel.fill(); NÃO UTILIZADO !!
         pincel.fillStroke = 'black'
-        pincel.strokeRect(x,0,100,100);
+        pincel.strokeRect(x,y,a,b);
 
     }
 
-        desenhaQuadradoVerde(0);
-        desenhaQuadradoVerde(50);
-        desenhaQuadradoVerde(100);
+        desenhaQuadrado(50,50, 100, 50, 'blue'); 
+        desenhaQuadrado(100, 100, 150, 100, 'orange')
+        desenhaQuadrado(100,100, 150, 50, 'pink')
+        desenhaQuadrado(50, 100, 100, 50, 'black');
+        desenhaQuadrado(50, 150, 100, 50, 'yellow');
+        desenhaQuadrado(50, 200, 100, 50, 'green');
 
     </script>
     

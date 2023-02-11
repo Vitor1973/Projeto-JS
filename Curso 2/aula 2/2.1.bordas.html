@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas</title>
+</head>
+<body>
+    <canvas with="600" height="400"></canvas>
+    <script>
+        function denhaquadrado (x, y, cor) {
+            var tela = document.querySelector('canvas')
+            var pincel = tela.getContext('2d')
+
+            pincel.fillStyle = cor;
+            pincel.fillRect(x, y, 50, 50);
+            pincel.fillStroke = 'black';
+            pincel.strokeRect(x, y, 50, 50);
+
+        }
+        //Estrutura de Repetição com while
+        /*var x = 0;
+        while(x < 800) {
+           
+            denhaquadrado(x, 0, 'green');
+            denhaquadrado(x, 50, 'red');
+            denhaquadrado(x, 100, 'orange');
+            x = x + 50; 
+
+        }*/
+
+        for( var x = 0; x < 600; x = x + 50) {
+            denhaquadrado(x, 0, 'green');
+            denhaquadrado(x, 50, 'red');
+            denhaquadrado(x, 100, 'orange');
+            denhaquadrado(x, 150, 'yellow');
+
+        }
+        
+    </script>
+    
+</body>
+</html>
