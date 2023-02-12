@@ -12,11 +12,11 @@
 
         function desenhaQuadrado(x, y, a, b, cor) {
         var tela = document.querySelector('canvas')
-        var pincel = tela.getContext('2d');
+        var pincel = tela.getContext('2d'); // Me dá um pincel 2d
 
-        pincel.fillStyle = cor; //'green';
+        pincel.fillStyle = cor; //'green'; O método fillRect() desenha um retângulo "preenchido". A cor padrão do preenchimento é preto.
+                                 //Dica: Use a propriedade fillStyle para definir uma cor, gradiente ou padrão usado para preencher o desenho.
         pincel.fillRect(x, y, a, b);
-        //pincel.fill(); NÃO UTILIZADO !!
         pincel.fillStroke = 'black'
         pincel.strokeRect(x,y,a,b);
 
