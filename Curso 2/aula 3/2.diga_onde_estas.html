@@ -17,8 +17,8 @@
 
         function exibeAlerta(evento) {
             
-            var x = evento.pageX;
-            var y = evento.pageY;
+            var x = evento.pageX - tela.offsetLeft; // Tira a borda da esquerda
+            var y = evento.pageY - tela.offsetTop; // Tira a borda de cima
 
             alert(x + ',' +  y);
 
