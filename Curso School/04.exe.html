@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 04</title>
+    <style>
+        body {
+            background-color: aqua;
+            font: 18pt normal;
+            color: black;
+        }
+       a[target] {
+        background-color: rgb(13, 225, 38);
+       
+       }
+    </style>
+</head>
+<body>
+    <h1>Documento Objeto</h1>
+    <h2>Metodo querySelector()</h2>
+    <p>O seletor CSS a[target] garante que todos os links com atributo de destino tenham um fundo colorido:</p>
+    <p>Adicione uma borda colorida ao primeiro link com um atributo de destino: </p>
+
+    <a href="https://ciberduvidas.iscte-iul.pt" target="_blank">Jesus em Latim</a>
+    <a href="https://www.bibliaonline.com.br/" target="_top">Biblia Online</a>
+    <a href="https://pt.wikipedia.org/wiki/Gal%C3%A1xia">Galaxia</a>
+
+    <script>
+        document.querySelector("a[target]").style.border = "2px solid blue"
+        document.querySelector("a[target]").style.border = "2px solid blue"
+        document.querySelector("a[target]").style.border = "3px solid blue"
+    </script>
+</body>
+</html>

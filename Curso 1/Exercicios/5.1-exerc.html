@@ -1,23 +1,32 @@
 <meta charset="UTF-8">
 
-<h3>Gasolina ou Álcool quem vai mais longe ?</h3>
+<h2 style="color: gray">Gasolina ou Álcool qual compensa mais pelo valor e km rodados ?</h2>
 
 <script>
-alert('Quem percorre mais Km ?')
+alert('Quem percorre mais Alcool ou Gasolina e qual custa menos por Km percorrido ?')
 
-var tanque = '60L'
-var gasolina = '15Km/l';
-var alcool = '10Km/l';
+const tanque = 60
+const gasolina = '16Km/l';
+const alcool = '11Km/l';
+const precoGas = 5.85;
+const precoAlc = 3.80;
+const compensaGas = 5.85 / 16; 
+const compensaAlc = 3.80 / 11;
+const caminhoGasolina = 60 * 16;
+const caminhoAlcool = 60 * 11;
 
-
-var caminhoGasolina = 60 * 15;
-var caminhoAlcool = 60 * 10;
-
-document.write("Com um tanque de gasolina posso rodar " + caminhoGasolina + " Km ")
+document.write("Com um tanque abastecido de gasolina posso rodar " + caminhoGasolina + " Km ");
 document.write("<br>");
-document.write("Com um tanque de alcool posso rodar " + caminhoAlcool + " Km ")
+document.write("Com um tanque abastecido de alcool posso rodar " + caminhoAlcool + " Km ");
+document.write("<br>");
+document.write(" Valor para encher o tanque com Álcool R$ " + tanque * precoAlc + " reais");
+document.write("<br>");
+document.write(" Valor para encher o tanque com Gasolina R$ " + tanque * precoGas + " reais");
+document.write("<br>");
+document.write("Valor para percorrer cada km abastecido com gasolina sai por R$ " + compensaGas + " Km/l" );
+document.write("<br>");
+document.write("Valor para percorrer cada km abastecido com gasolina sai por R$ " + compensaAlc + " Km/l" );
 
 </script>
 
-
-
+<h3 style="color: red">O combustível que compensa pelo valor do Km rodado é o Álccol !!!</h3>

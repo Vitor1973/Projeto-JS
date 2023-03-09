@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 03</title>
+    <style>
+        body {
+            background-color: blue;
+        }
+        div {
+            border: 1px solid black;
+            margin-bottom: 10px;
+            background-color: aqua;
+            font: 22pt Arial;
+            color: rgb(235, 14, 58);
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h3>Elemento</h3>
+        <p>Eu sou um elemento, meu pai e uma div <strong>ELEMENTO</strong></p>
+    </div>
+    <p>Clique no botão para alterar a cor de fundo</p>
+    <button onclick="myFunction()">#Aperte Aqui#</button>
+    <button onclick="myFunction2()">Aperte Ali</button>
+    <script>
+        function myFunction() {
+            const x =document.querySelector("div > p");
+            x.style.backgroundColor = "yellow"
+        }
+        function myFunction2() {
+            const y = document.querySelector("div > h3")
+            y.style.backgroundColor = "Black"
+        }
+    </script>
+    
+</body>
+</html>
